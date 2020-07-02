@@ -12,7 +12,7 @@ resource "aws_iam_policy" "policy" {
   "Statement": [
     {
       "Effect": "Allow",
-      "Action": ${jsonencode(var.actions)},
+      "Action": ${jsonencode([for action in var.actions: "dynamodb:${action}"])},
       "Resource": "${var.db_arn}"
     }
   ]
