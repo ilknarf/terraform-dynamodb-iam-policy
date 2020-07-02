@@ -1,5 +1,3 @@
-provider "aws" {}
-
 resource "aws_iam_policy" "policy" {
   name        = var.name
   name_prefix = var.name_prefix
