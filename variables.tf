@@ -1,17 +1,21 @@
 variable "actions" {
-    default = ["*"]
+  default = ["*"]
 }
 
 variable "name" {
-    default = null
+  default = null
 }
 
 variable "name_prefix" {
-    default = null
+  default = null
 }
 
 variable "description" {
-    default = null
+  default = null
+}
+
+variable "path" {
+  default = null
 }
 
 variable "db_arn" {}
